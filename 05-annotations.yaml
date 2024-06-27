@@ -8,7 +8,7 @@ metadata:
   annotations:
     kubernates.io/created-by: 'sivakumar'
     jenkins.build.url: 'https://jenkins.daws78s.online/expense/job/backend/54'
-  spec:
-    containers: 
-    - name: nginx
-      image: nginx
+spec:
+  containers: 
+  - name: nginx
+    image: nginx
