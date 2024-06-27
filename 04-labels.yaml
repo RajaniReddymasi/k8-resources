@@ -6,6 +6,6 @@ metadata:
     course: k8
     trainer: sivakumar
 spec:
-  container: 
+  containers: 
   - name: nginx
     image: nginx
