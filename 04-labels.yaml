@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: lebel
+  labels:
+    course: k8
+    trainer: sivakumar
+spec:
+  container: 
+  - name: nginx
+    image: nginx
