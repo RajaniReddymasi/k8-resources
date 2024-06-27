@@ -1,17 +1,13 @@
 kind: Pod
 apiVersion: v1
-metadata: 
+metadata:
   name: env-test
-  labels:
-    course: k8
-    trainer: sivakumar
-spec: 
+spec:
   containers:
   - name: nginx
     image: nginx
     env:
     - name: course
-     value: 'kubernates'
+      value: 'kubernetes'
     - name: duration
-      value: '120hrs'
-   
+      value: '20hours'
