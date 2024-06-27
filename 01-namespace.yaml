@@ -1,6 +1,6 @@
-kind: namespace
+kind: Namespace
 apiVersion: v1
-metadat: 
+metadata: 
   name: Expense
   lebels: 
     name: expense 
