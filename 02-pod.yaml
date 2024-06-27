@@ -3,6 +3,6 @@ apiversion: v1
 metadata: 
   name: nginx
 spec: 
-  contaners:
+  containers:
   - name: nginx
     image: nginx
