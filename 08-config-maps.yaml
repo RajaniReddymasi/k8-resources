@@ -1,5 +1,5 @@
-kind: configmap
 apiVersion: v1
+kind: ConfigMap
 metadata: 
   -name: daws78s
 data:
