@@ -1,7 +1,16 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: expense
+  labels:
+    name: expense
+    environment: dev
+---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: ebs-dynamic
+  namespace: expense
 spec:
   storageClassName: "rajani-sc" # Empty string must be explicitly set otherwise default StorageClass will be set
   accessModes:
