@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ebs-dynamic
 spec:
-  storageClassName: "expense-ebs" # Empty string must be explicitly set otherwise default StorageClass will be set
+  storageClassName: "rajani-sc" # Empty string must be explicitly set otherwise default StorageClass will be set
   accessModes:
     - ReadWriteOnce
   resources:
@@ -25,8 +25,9 @@ spec:
     - name: persistent-storage
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c
+    topology.kubernetes.io/zone: us-east-1a
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-dynamic
+---
