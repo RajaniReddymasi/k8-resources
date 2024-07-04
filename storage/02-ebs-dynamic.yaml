@@ -23,6 +23,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-dynamic
+  namespace: expense
   labels:
     purpose: ebs-static
     project: expense
