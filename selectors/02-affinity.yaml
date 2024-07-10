@@ -5,7 +5,7 @@ metadata:
 spec:
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      prefferedDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
           - key: project
@@ -15,11 +15,3 @@ spec:
   containers:
   - name: with-node-affinity
     image: nginx
-  tolerations:
-  - key: "project"
-    operator: "Equal"
-    value: "expense"
-    effect: "NoSchedule"
-  - key: "project"
-    operator: "Exists"
-    effect: "NoSchedule"
