@@ -15,7 +15,7 @@ spec:
   containers:
   - name: with-node-affinity
     image: nginx
-   tolerations:
+  tolerations:
   - key: "project"
     operator: "Equal"
     value: "expense"
