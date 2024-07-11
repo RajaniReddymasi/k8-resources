@@ -53,3 +53,16 @@ spec:
       containers:
       - name: web-app
         image: nginx:1.16-alpine
+# # here we mentioned pod anti affinity so this two pods go to different nodes as we mentions pod aniti 
+#       podAffinity:
+#           requiredDuringSchedulingIgnoredDuringExecution:
+#           - labelSelector:
+#               matchExpressions:
+#               - key: app
+#                 operator: In
+#                 values:
+#                 - store
+#             topologyKey: "kubernetes.io/hostname"
+#       containers:
+#       - name: web-app
+#         image: nginx:1.16-alpine
