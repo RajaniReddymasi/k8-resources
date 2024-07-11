@@ -50,6 +50,6 @@ spec:
                 values:
                 - web-store
             topologyKey: "kubernetes.io/hostname"
-    containers:
-    - name: web-app
-      image: nginx:1.16-alpine
+      containers:
+      - name: web-app
+        image: nginx:1.16-alpine
